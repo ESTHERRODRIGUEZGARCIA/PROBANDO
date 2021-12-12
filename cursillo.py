@@ -47,3 +47,28 @@ while True: #Creamos un bucle
         break
     else:
         print ("""Has ingresado un numero de opcion erroneo""") #En caso que el numero no se encuentre
+
+
+'''
+Explicación del código:
+creación de las cuatro funciones básicas de cálculo y también las funciones internas input!
+
+código está dividido en tres partes, esto es intencional para explicar cada parte por separado:
+
+En la primera parte
+Creamos cuatro funciones correspondientes al cálculo que habrá disponible (pero aun no las llamamos). 
+Habiendo creado las funciones pasamos a la parte dos.
+
+En la segunda parte
+Creamos un bucle (que se repite para no dejar continuar al usuario hasta que ingrese los números con
+ lo que va a trabajar nuestra calculadora, los cuales se almacenan en variables). El try/except se 
+ utiliza para que si surgiera un error no finalizara el programa y nos mostrara un “Error” personalizado 
+
+Una vez que presentamos las entradas también le presentamos al usuario la elección de 4 opciones 
+correspondientes al cálculo a realizar el cual se almacena en la variable op.
+
+En la tercera parte
+Determinamos el número almacenado en la variable op mediante un If/elif y según sea el número ejecutamos
+la llamada a la función correspondiente al cálculo que quiere realizar.
+
+'''
