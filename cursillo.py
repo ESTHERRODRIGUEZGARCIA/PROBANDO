@@ -68,8 +68,13 @@ while True: #Creamos un bucle
             dividir()
             break
         else:
-            print ("""Has ingresado un numero de opcion erroneo""") #En caso que el numero no
-                                                                            #se encuentre
+            print ("""Has ingresado un numero de opcion erroneo""") #En caso que el numero no se encuentre
+
+    except ZeroDivisionError:
+        print ("Nuestro calculador no permite dividir por cero, intenta otro calculo!")
+
     except:
         print ("Error")
         op = '?'
+    finally:
+        print ("Gracias por utilizar nuestra calculadora")
